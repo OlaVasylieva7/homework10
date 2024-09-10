@@ -16,6 +16,7 @@
 // }, 1000);
 
 
+
 // task 2
 
 // Завдання "Анімація елементів": Створіть кілька елементів на сторінці і реалізуйте просту анімацію, змінюючи їх розмір, 
@@ -39,12 +40,55 @@
 // circles.forEach(colorCircles);
 
 
+
 // task 3
 
 // Завдання "Інтерактивна гра": Створіть просту інтерактивну гру, де гравець має натискати на елементи на сторінці протягом певного інтервалу часу, використовуючи setInterval. 
 // Реалізуйте лічильник очок та відслідковуйте кількість натисків гравця.
 
+// const triangles = document.querySelectorAll('.triangle');
+// const scoreDisplay = document.getElementById('score');
+// const gameOverDisplay = document.getElementById('game-over');
+// const finalScoreDisplay = document.getElementById('final-score');
 
+// let score = 0;
+
+// let totalGameTime = 20 * 1000;
+
+// function startGame() {
+//     triangles.forEach(triangle => {
+//         setInterval(() => {
+//             const size = Math.random() * 50 + 50; 
+            
+//             triangle.style.borderLeftWidth = size / 2 + 'px';
+//             triangle.style.borderRightWidth = size / 2 + 'px';
+//             triangle.style.borderBottomWidth = size + 'px';
+
+//             const maxLeft = window.innerWidth - size;
+//             const maxTop = window.innerHeight - size * 2;
+
+//              triangle.style.left = Math.random() * maxLeft + 'px';
+//             triangle.style.top = Math.random() * maxTop + 'px';
+//         }, 1000);
+
+//         triangle.addEventListener('click', () => {
+//             score++;
+//             scoreDisplay.textContent = score;
+//         });
+//     });
+    
+//     setTimeout(() => {
+//         endGame();
+//     }, totalGameTime);
+// }
+
+// function endGame() {
+//     triangles.forEach(triangle => triangle.style.display = 'none');
+//     gameOverDisplay.classList.remove('hidden');
+//     finalScoreDisplay.textContent = score;
+// }
+
+// startGame();
 
 
 
@@ -52,3 +96,20 @@
 
 // Завдання "Контроль часу": Створіть програму, яка дозволяє користувачу встановити певний час (у секундах) за допомогою введення з клавіатури. 
 // Потім використовуйте setTimeout або setInterval, щоб після встановленого часу вивести повідомлення.
+
+// function initializeTimer() {
+//     const seconds = prompt("enter the number of seconds");
+
+//     if (isNaN(seconds) || seconds <= 0) {
+//         alert("you need to enter a valid number of seconds");
+//         return;
+//     }
+
+//     alert(`timer started for ${seconds} seconds`);
+
+//     setTimeout(() => {
+//         alert("timer has stopped");
+//     }, seconds * 1000);
+// }
+
+// initializeTimer();
