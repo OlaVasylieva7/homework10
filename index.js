@@ -114,5 +114,4 @@
 //     startCountdown("timer has stopped", seconds * 1000);
 // }
 
-
 // initializeTimer();
