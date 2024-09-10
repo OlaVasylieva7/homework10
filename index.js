@@ -105,11 +105,14 @@
 //         return;
 //     }
 
-//     alert(`timer started for ${seconds} seconds`);
+//     function startCountdown(message, delay) {
+//         window.setTimeout(() => {
+//             alert(message);
+//         }, delay);
+//     }
 
-//     setTimeout(() => {
-//         alert("timer has stopped");
-//     }, seconds * 1000);
+//     startCountdown("timer has stopped", seconds * 1000);
 // }
+
 
 // initializeTimer();
